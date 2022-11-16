@@ -1,0 +1,8 @@
+C:\Users\user\source\repos\Encryption\pig latin\bin\Debug\pig latin.exe.config
+C:\Users\user\source\repos\Encryption\pig latin\bin\Debug\pig latin.exe
+C:\Users\user\source\repos\Encryption\pig latin\bin\Debug\pig latin.pdb
+C:\Users\user\source\repos\Encryption\pig latin\obj\Debug\pig latin.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Encryption\pig latin\obj\Debug\pig latin.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\Encryption\pig latin\obj\Debug\pig latin.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Encryption\pig latin\obj\Debug\pig latin.exe
+C:\Users\user\source\repos\Encryption\pig latin\obj\Debug\pig latin.pdb
