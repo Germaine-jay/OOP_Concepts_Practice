@@ -1,0 +1,8 @@
+C:\Users\user\source\repos\Encryption\guessing game\bin\Debug\guessing game.exe.config
+C:\Users\user\source\repos\Encryption\guessing game\bin\Debug\guessing game.exe
+C:\Users\user\source\repos\Encryption\guessing game\bin\Debug\guessing game.pdb
+C:\Users\user\source\repos\Encryption\guessing game\obj\Debug\guessing game.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Encryption\guessing game\obj\Debug\guessing game.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\Encryption\guessing game\obj\Debug\guessing game.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Encryption\guessing game\obj\Debug\guessing game.exe
+C:\Users\user\source\repos\Encryption\guessing game\obj\Debug\guessing game.pdb
