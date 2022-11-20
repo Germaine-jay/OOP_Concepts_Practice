@@ -8,11 +8,11 @@ namespace guessing_game
 {
     internal class Program
     {
-        public int randomNumber;
+        private int randomNumber;
 
-        public int numberOfGuesses;
+        private int numberOfGuesses;
 
-        public List<int> listOfGuesses = new List<int>();
+        private List<int> listOfGuesses = new List<int>();
 
         Random secretNumber = new Random();
 
@@ -26,8 +26,7 @@ namespace guessing_game
                 Console.Write("Enter your guess: ");
                 var playerGuess = int.Parse(Console.ReadLine());
 
-                int value;
-                if (int.TryParse(playerGuess.ToString(), out value) == false || !string.IsNullOrEmpty(playerGuess.ToString()))
+                if (int.TryParse(playerGuess.ToString(), out int value) == false || !string.IsNullOrEmpty(playerGuess.ToString()))
                 {
                     if (listOfGuesses.Last() == playerGuess)
                     {
@@ -82,8 +81,8 @@ namespace guessing_game
 
         static void Main(string[] args)
         {
-            Program New = new Program();
-            New.guessingGame();
+            Program NewGame = new Program();
+            NewGame.guessingGame();
         }
     }
 }
