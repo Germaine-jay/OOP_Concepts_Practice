@@ -12,7 +12,7 @@ namespace pig_latin
 
         public string newWord;
 
-        public string pigLatin(string wordsInEnglish)
+        public string PigLatin(string wordsInEnglish)
         {
             foreach (string word in wordsInEnglish.Split())
             {
@@ -22,7 +22,7 @@ namespace pig_latin
             return pig_latin;
 
         }
-        public string english(string wordsInpigLatin)
+        public string English(string wordsInpigLatin)
         {
             foreach (string word in wordsInpigLatin.Split())
             {
@@ -40,19 +40,19 @@ namespace pig_latin
 
             Console.WriteLine("Enter 1 to convert to pig latin or 2 to convert to english");
             var option = int.Parse(Console.ReadLine());
-            if(option == 1 )
+            if(option == 1)
             {
                 Console.WriteLine("Enter a sentence in english");
                 var sentence = Console.ReadLine();
 
-                string sentenceInEnglish = New.pigLatin(sentence);
+                string sentenceInEnglish = New.PigLatin(sentence);
                 Console.WriteLine(sentenceInEnglish);
             }
             else
             {
                 Console.WriteLine("Enter a sentence in piglatin");
                 var sentence = Console.ReadLine();
-                string sentenceInPigLatin = New.english(sentence);
+                string sentenceInPigLatin = New.English(sentence);
                 Console.WriteLine(sentenceInPigLatin);
             }
         }
