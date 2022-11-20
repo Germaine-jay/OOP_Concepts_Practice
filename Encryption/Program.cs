@@ -8,10 +8,10 @@ namespace Encryption
 {
     internal class Program
     {
-        public string message;
+        private string EncodedMessage;
 
-        public string Message;
-        public char[] Alpha
+        private string DecodedMessage;
+        private char[] Alpha
         {
             get
             {
@@ -20,7 +20,7 @@ namespace Encryption
             }
 
         }
-        public char[] Code
+        private char[] Code
         {
             get
             {
@@ -29,28 +29,28 @@ namespace Encryption
             }
         }
 
-        public Dictionary<char, char> encryption = new Dictionary<char, char>();
+        private Dictionary<char, char> Encryption = new Dictionary<char, char>();
 
         public string Encode(string word)
         {
 
             for (int i = 0; i < Code.Length; i++)
             {
-                encryption.Add(Alpha[i],Code[i]);
+                Encryption.Add(Alpha[i],Code[i]);
             }
 
             foreach (var whiteSpace in word)
             {
                 if (char.IsWhiteSpace(whiteSpace))
-                { Message += whiteSpace; }
+                { EncodedMessage += whiteSpace; }
 
-                foreach (var letter in encryption)
+                foreach (var letter in Encryption)
                 {
                     if ((letter.Key).ToString().Contains(whiteSpace))
-                    { Message += letter.Value; }
+                    { EncodedMessage += letter.Value; }
                 }
             }
-            return Message;
+            return EncodedMessage;
         }
 
         public string Decode(string encodedWord)
@@ -58,15 +58,15 @@ namespace Encryption
             foreach (var wordKey in encodedWord)
             {
                 if (char.IsWhiteSpace(wordKey))
-                { message += wordKey; }
+                { DecodedMessage += wordKey; }
 
-                foreach (var letter in encryption)
+                foreach (var letter in Encryption)
                 {
                     if ((letter.Value).ToString().Contains(wordKey))
-                    { message += letter.Key; }
+                    { DecodedMessage += letter.Key; }
                 }
             }
-            return message;
+            return DecodedMessage;
         }
 
         static void Main(string[] args)
@@ -74,8 +74,7 @@ namespace Encryption
             Console.WriteLine("Enter any sentence");
             var sentence = Console.ReadLine();
 
-            int value;
-            if (int.TryParse(sentence, out value) == true || string.IsNullOrEmpty(sentence))
+            if (int.TryParse(sentence, out _)  || string.IsNullOrEmpty(sentence))
             {
                 Console.WriteLine("invalid input");
             }
